@@ -1,0 +1,13 @@
+box: huideyeren/review
+
+build:
+  steps:
+    - script:
+        name: Build PDF
+        code: |
+          rake clean pdf
+          cp XiandaiFenshuVol3.pdf ${WERCKER_REPORT_ARTIFACTS_DIR}/
+          ./upload_dropbox.sh XiandaiFenshuVol3.pdf ${DROPBOX_TOKEN}
+          rake clean epub
+          cp XiandaiFenshuVol3.epub ${WERCKER_REPORT_ARTIFACTS_DIR}/
+          ./upload_dropbox_epub.sh XiandaiFenshuVol3.epub ${DROPBOX_TOKEN}

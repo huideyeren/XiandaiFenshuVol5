@@ -1,0 +1,22 @@
+{
+  "name": "xiandai_fenshu_c94",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "textlint *.re"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/kaitokudo/xiandai_fenshu_c94.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/kaitokudo/xiandai_fenshu_c94#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "textlint-plugin-review": "^0.3.3",
+    "textlint-rule-preset-japanese": "^4.0.0"
+  }
+}
