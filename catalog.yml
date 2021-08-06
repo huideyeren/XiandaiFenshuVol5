@@ -1,4 +1,5 @@
 PREDEF:
+  - preface.re
 
 CHAPS:
   - xiandai-fenshu-c99.re
@@ -6,4 +7,6 @@ CHAPS:
 APPENDIX:
 
 POSTDEF:
+  - postscript.re
+  - bib.re
 
