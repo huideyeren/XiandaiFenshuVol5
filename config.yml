@@ -254,7 +254,7 @@ coverimage: cover.jpg
   # pdfcrop_pixelize_cmd: "mv %i %o"
 
 # EPUBにおけるページ送りの送り方向、page-progression-directionの値("ltr"|"rtl"|"default")
-direction: "rtl"
+direction: "ltr"
 
 # EPUBのOPFへの固有の追加ルール
 # <package>要素に追加する名前空間
@@ -351,7 +351,7 @@ texstyle: ["reviewmacro"]
 # LaTeX用のdocumentclassを指定する
 # オプションについてはsty/README.mdを参照
 # デフォルトは印刷用。電子配布版を作るには media=ebook とする
-texdocumentclass: ["utbook", "oneside", "media=print,paper=a5"]
+texdocumentclass: ["review-jsbook", "paper=b5,serial_pagination=true,cameraready=ebook,cover=false,hiddenfolio=shippo,fontsize=14Q,line_length=40zw,number_of_lines=34,baselineskip=25.5H"]
 #
 # LaTeX用のコマンドを指定する
 # texcommand: "uplatex"
