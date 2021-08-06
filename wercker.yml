@@ -9,6 +9,10 @@ build:
           bundle exec rake clean pdf
           cp XiandaiFenshuVol5.pdf ${WERCKER_REPORT_ARTIFACTS_DIR}/
           ./upload_dropbox.sh XiandaiFenshuVol5.pdf ${DROPBOX_TOKEN}
+    - script:
+        name: Build ePUB
+        code: |
+          bundle install --path vendor/bundle
           bundle exec rake clean epub
           cp XiandaiFenshuVol5.epub ${WERCKER_REPORT_ARTIFACTS_DIR}/
           ./upload_dropbox_epub.sh XiandaiFenshuVol5.epub ${DROPBOX_TOKEN}
