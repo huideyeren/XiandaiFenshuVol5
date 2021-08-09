@@ -1,0 +1,30 @@
+{
+    "rules": {
+        "incremental-headers": true,
+        "max-ten": {
+            "max" : 3
+        },
+        "no-doubled-conjunctive-particle-ga": true,
+        "no-dropping-the-ra": true,
+        "one-white-space-between-zenkaku-and-hankaku-eiji": true,
+        "common-misspellings": {
+            // Misspellings to be ignored (case-insensitive)
+            "ignore": []
+        },
+        "sjsj": {
+            // spelling errors are an edit distance of 1 from the target.
+            "distance": 1
+        },
+        "preset-jtf-style": true,
+        "prh": {
+            "rulePaths": [
+                "./node_modules/prh/prh-rules/languages/ja/typo.yml",
+                "./node_modules/prh/prh-rules/media/techbooster.yml",
+                "./node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml"
+            ]
+        }
+    },
+    "plugins": [
+        "review"
+    ]
+}
