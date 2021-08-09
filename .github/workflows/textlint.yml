@@ -32,7 +32,7 @@ jobs:
       - name: run textlint
         id: run-textlint
         run: |
-          echo "::set-output name=TEXTLINT_OUTPUT::$(./node_modules/.bin/textlint '*.re' -f json || true)"
+          echo "::set-output name=TEXTLINT_OUTPUT::$(./node_modules/.bin/textlint './*.re' -f json || true)"
       - uses: yutailang0119/action-textlint@v1
         with:
           textlint_output: ${{ steps.run-textlint.outputs.TEXTLINT_OUTPUT }}
