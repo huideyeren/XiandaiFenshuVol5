@@ -22,11 +22,12 @@ language: ja
 
 # 書名
 # 読みを入れる例 booktitle: {name: "Re:VIEW EPUBサンプル", file-as: "リビューイーパブサンプル"}
-booktitle: Re:VIEWサンプル書籍
+booktitle: "現代焚書 第5号"
+subtitle: "きっと何者にもなれない私たち"
 
 # 著者名。「, 」で区切って複数指定できる
 # 読みを入れる例 aut: [{name: "青木峰郎", file-as: "アオキミネロウ"}, {name: "武藤健志", file-as: "ムトウケンシ"}, {name: "高橋征義", file-as: "タカハシマサヨシ"}, {name: "角征典", file-as: "カドマサノリ"}]
-aut: ["青木峰郎", "武藤健志", "高橋征義", "角征典"]
+aut: ["ヨーシャ"]
 
 # 以下はオプション
 # 以下はオプション(autと同じように配列書式で複数指定可能)。
@@ -56,7 +57,9 @@ aut: ["青木峰郎", "武藤健志", "高橋征義", "角征典"]
 # a-oth, oth: その他
 # a-pht, pht: 撮影責任者
 # a-pbl, pbl: 出版社（発行所）
+a-pbl: 恢徳堂
 # a-prt, prt: 印刷所
+prt: ねこのしっぽ
 # a-red, red: 項目の枠組起草者
 # a-rev, rev: 評論者
 # a-spn, spn: 援助者
@@ -67,14 +70,14 @@ aut: ["青木峰郎", "武藤健志", "高橋征義", "角征典"]
 # contact: 連絡先
 
 # 刊行日(省略した場合は実行時の日付)
-date: 2021-08-05
+date: 2021-12-31
 # 発行年月。YYYY-MM-DD形式による配列指定。省略した場合はdateを使用する
 # 複数指定する場合は次のように記述する
 # [["初版第1刷の日付", "初版第2刷の日付"], ["第2版第1刷の日付"]]
 # 日付の後ろを空白文字で区切り、任意の文字列を置くことも可能。
-history: [["2021-08-05"]]
+history: [["2021-12-31"]]
 # 権利表記(配列で複数指定可)
-# rights: (C) 2016-2020 Re:VIEW Developers
+rights: (C) 2021 恢徳堂
 # description: 説明
 # subject: 短い説明用タグ(配列で複数指定可)
 # type: 書籍のカテゴリーなど(配列で複数指定可)
@@ -97,23 +100,24 @@ debug: null
 
 # HTMLファイルの拡張子(省略した場合はhtml)
 # htmlext: html
+htmlext: xhtml
 #
 # CSSファイル(配列で複数指定可)
 stylesheet: ["style.css"]
 
 # ePUBのバージョン (2か3)
-# epubversion: 3
+epubversion: 3
 #
 # HTMLのバージョン (4か5。epubversionを3にしたときには5にする)
-# htmlversion: 5
+htmlversion: 5
 
 # 目次として抽出する見出しレベル
-toclevel: 3
+toclevel: 2
 
 # 採番の設定。採番させたくない見出しには「==[nonum]」のようにnonum指定をする
 #
 # 本文でセクション番号を表示する見出しレベル
-secnolevel: 2
+secnolevel: 3
 
 # 本文中に目次ページを作成するか。省略した場合はnull (作成しない)
 toc: true
@@ -144,6 +148,7 @@ coverimage: cover.jpg
 # 奥付を作成するか。デフォルトでは作成されない。trueを指定するとデフォルトの奥付、ファイル名を指定するとそれがcolophon.htmlとしてコピーされる
 # デフォルトの奥付における各項目の名前（「著　者」など）を変えたいときにはlocale.ymlで文字列を設定する（詳細はdoc/format.ja.mdを参照）
 # colophon: null
+colophon: true
 # デフォルトの奥付における、各項目の記載順序
 # colophon_order: ["aut", "csl", "trl", "dsr", "ill", "cov", "edt", "pbl", "contact", "prt"]
 
@@ -203,6 +208,7 @@ coverimage: cover.jpg
 # (文字幅を考慮した行数計測には、別途unicode-eaw gemファイルが必要)
 # ページあたりの行数文字数を用紙サイズで指定する(A5 or B5)
 # page_metric: A5
+page_metric: B5
 #
 # あるいは、配列で指定することもできる
 # 各数字の意味は、順にリストの行数、リストの1行字数、テキストの行数、テキストの1行字数
@@ -364,6 +370,7 @@ texdocumentclass: ["review-jsbook", "paper=b5,serial_pagination=true,cameraready
 #
 # LaTeX用のdvi変換コマンドのオプションを指定する。変換が遅い場合は`-d 5 -z 3`等にする
 # dvioptions: "-d 5 -z 9"
+dvioptions: "-d 5 -z 9 -r 600"
 
 # 以下のパラメータを有効にするときには、
 # pdfmaker:
@@ -412,6 +419,7 @@ pdfmaker:
   #
   # 索引を作成するか。trueにすると索引作成が有効になる
   # makeindex: null
+  makeindex: true
   # 索引作成コマンド
   # makeindex_command: mendex
   # 索引作成コマンドのオプション
@@ -420,6 +428,7 @@ pdfmaker:
   # makeindex_sty: null
   # 索引作成コマンドの辞書ファイル
   # makeindex_dic: null
+  makeindex_dic: sakuin.dic
   # MeCabによる索引読み探索を使うか
   # makeindex_mecab: true
   # MeCabの読みの取得オプション
