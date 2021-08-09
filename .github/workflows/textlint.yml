@@ -29,7 +29,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - run: npm install
-      - run: ls -la ./node_modules/@textlint
       - name: run textlint
         id: run-textlint
         run: |
