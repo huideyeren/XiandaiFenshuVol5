@@ -18,10 +18,11 @@ jobs:
   # This workflow contains a single job called "build"
   pdf:
     # The type of runner that the job will run on
-    runs-on: huideyeren/review
+    runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: docker://huideyeren/review
       - name: Install gems.
         run: bundle install
       - name: Build PDF.
