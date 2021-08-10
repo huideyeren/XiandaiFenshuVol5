@@ -53,7 +53,7 @@ jobs:
       
       - name: Execute textlint
         run: |
-          npx textlint -f checkstyle *.re | tee -a .textlint.log
+          npx textlint -f checkstyle *.re >> .textlint.log
 
       - name: Run reviewdog
         # textlintで文章上のミスがあった場合のみ、reviewdogを実行させるようにする
