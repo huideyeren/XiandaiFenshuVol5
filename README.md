@@ -12,6 +12,19 @@ Sorry, but the book will be written in Japanese, and the project is in Japanese 
 
 This book is provided under a CC-BY-4.0 License, except for material quoted within the scope of quotations permitted under copyright law. The licensing of the quoted material is subject to the original license.
 
+## テーマ
+
+まずは、Twitterで募集したアンケート（以下参照）をご覧ください。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">恢徳堂では、今年冬のコミックマーケットに評論ジャンル（もしくはアニメ・ゲームジャンル）で以下の内容のどれかで申し込むことを考えています。<br>投票結果1位のものをメインで書くことを考えていますが、それ以外ものも書けたら一緒に出すかもしれません。<br>なお、ゲスト原稿も募集しております。</p>&mdash; ヨーシャ@恢徳堂（評論・創作・同人・写真アカウント） (@IosifHuide) <a href="https://twitter.com/IosifHuide/status/1422510235630014464?ref_src=twsrc%5Etfw">August 3, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+これにより、テーマはアンケートで同率首位だった以下の2つに絞られました。
+
+- 10周年の今だから考える「輪るピングドラム」論
+- 競馬ファン歴25年が語る「ウマ娘」と競馬
+
+実際の内容についてはまだ未定です。
+
 ## コントリビュートガイドライン
 
 作成中です。
