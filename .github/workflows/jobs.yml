@@ -8,11 +8,9 @@ on:
   push:
     branches:
       - main
-      - develop
   pull_request:
     branches:
       - main
-      - develop
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -62,3 +60,39 @@ jobs:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cat .textlint.log | tee | reviewdog -f=checkstyle -name="textlint" -reporter="github-check"
+  pdf:
+    needs: reviewdog-github-check
+    name: Make PDF
+    runs-on: ubuntu-latest
+    container:
+      image: huideyeren/review
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Install gems.
+        run: bundle install
+      - name: Build PDF.
+        run: bundle exec rake clean pdf
+      - name: Upload artifact.
+        uses: actions/upload-artifact@v2
+        with:
+          name: XiandaiFenshuVol5.pdf
+          path: XiandaiFenshuVol5.pdf
+  epub:
+    needs: reviewdog-github-check
+    name: Make EPUB
+    runs-on: ubuntu-latest
+    container:
+      image: huideyeren/review
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Install gems.
+        run: bundle install
+      - name: Build EPUB.
+        run: bundle exec rake clean epub
+      - name: Upload artifact.
+        uses: actions/upload-artifact@v2
+        with:
+          name: XiandaiFenshuVol5.epub
+          path: XiandaiFenshuVol5.epub
