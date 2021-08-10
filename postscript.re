@@ -1,5 +1,5 @@
 = あとがき
 
-@<m>{\rightline{著者：ヨーシャ\<iosha@huideyeren.info\>\}}
+@<m>{\rightline{ヨーシャ\}}
 
 この度はここまでお読みいただきありがとうございます。
