@@ -23,8 +23,8 @@ jobs:
     container:
       image: node:current-alpine
       env:
-        LEVEL: error
-        FLAGS: .
+        LEVEL: info
+        FLAGS: ./*.re
     steps:
       - uses: actions/checkout@v1
       - name: setup-reviewdog
