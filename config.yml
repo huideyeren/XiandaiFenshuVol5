@@ -219,7 +219,7 @@ page_metric: B5
 #   mathml: MathML変換。別途math_ml gemファイルが必要。EPUBMaker/WebMakerのみ効果
 #   imgmath: 画像化。オプションはimgmath_optionsで設定する
 #   mathjax: MathJax変換。EPUBMaker/WebMakerのみ効果。なお、MathJaxに必要なデータはインターネットから取得される。EPUBで利用できるかはEPUBリーダ依存
-# math_format: null
+math_format: mathml
 
 # math_formatがimgmathの場合の設定
 # 以下のパラメータを有効にするときには、
