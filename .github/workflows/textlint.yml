@@ -29,11 +29,4 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - run: npm install
-      - run: pwd
-      - name: run textlint
-        id: run-textlint
-        run: |
-          echo "::set-output name=TEXTLINT_OUTPUT::$(npx textlint *.re || true)"
-      - uses: yutailang0119/action-textlint@v1
-        with:
-          textlint_output: ${{ steps.run-textlint.outputs.TEXTLINT_OUTPUT }}
+      - run: npx textlint *.re
