@@ -17,16 +17,31 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   textlint:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    runs-on: Ubuntu-latest
+    container:
+      image: node:current-alpine
+      env:
+        LEVEL: error
+        FLAGS: .
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - run: npm install
-      - run: npx textlint *.re
+      - uses: actions/checkout@v1
+      - name: setup-reviewdog
+        run: |
+          mkdir -p $HOME/bin && wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh \
+            | sh -s -- -b /usr/local/bin/ v0.9.13
+          apk --update add git && \
+            rm -rf /var/lib/apt/lists/*
+      - name: installl-textlint
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          if [ ! -f "$(npm bin)/textlint" ]; then
+            npm install
+          fi
+      - name: run-reviewdog
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $(npm bin)/textlint -f checkstyle "${FLAGS:-'.'}" \
+            | reviewdog -f=checkstyle -name="textlint" -diff="git diff ${{ github.event.pull_request.base.ref }}" -reporter=github-pr-review -level="${LEVEL}"
