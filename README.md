@@ -27,4 +27,4 @@ This book is provided under a CC-BY-4.0 License, except for material quoted with
 
 ## コントリビュートガイドライン
 
-作成中です
+作成中です。
