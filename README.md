@@ -1,4 +1,4 @@
-# 現代焚書 第5号
+# 現代焚書第5号
 
 [![Build books.](https://github.com/huideyeren/XiandaiFenshuVol5/actions/workflows/jobs.yml/badge.svg)](https://github.com/huideyeren/XiandaiFenshuVol5/actions/workflows/jobs.yml)
 
@@ -8,7 +8,11 @@ Sorry, but the book will be written in Japanese, and the project is in Japanese 
 
 ## ライセンスについて （About LICENSE）
 
-![クリエイティブ・コモンズ・ライセンス](https://i.creativecommons.org/l/by/4.0/88x31.png) この書籍は著作権法上認められる引用の範囲内において引用した資料を除き、 [クリエイティブ・コモンズ 表示 4.0 国際 ライセンス](http://creativecommons.org/licenses/by/4.0/) の下に提供されています。引用した資料のライセンスについてはオリジナルのライセンスに従います。
+![クリエイティブ・コモンズ・ライセンス](https://i.creativecommons.org/l/by/4.0/88x31.png) 
+
+この書籍は著作権法上認められる引用の範囲内において引用した資料を除き、 [クリエイティブ・コモンズ 表示 4.0 国際 ライセンス](http://creativecommons.org/licenses/by/4.0/) の下に提供されています。引用した資料のライセンスについてはオリジナルのライセンスに従います。
+
+なお、[ライセンス条項の日本語訳](https://creativecommons.org/licenses/by/4.0/legalcode.ja)や[その要約](https://creativecommons.org/licenses/by/4.0/deed.ja)も目を通して置いてください。
 
 This book is provided under a CC-BY-4.0 License, except for material quoted within the scope of quotations permitted under copyright law. The licensing of the quoted material is subject to the original license.
 
@@ -27,4 +31,19 @@ This book is provided under a CC-BY-4.0 License, except for material quoted with
 
 ## コントリビュートガイドライン
 
-作成中です。
+現代焚書第5号は前述の通り、オープンなライセンスの元で制作されています。寄稿や校正など、この本の制作に協力したい場合はこのコントリビュートガイドラインに目を通した上でご参加ください。
+
+### レギュレーション
+
+現代焚書第5号は全年齢対応の評論誌です。
+
+### 使用するツールについて
+
+現代焚書第5号は、以下のツールを使って作成されています。
+
+- [書籍作成ツール「Re:VIEW」](https://reviewml.org/)
+- [ソースコード管理サービス「GitHub」](https://github.com/)
+- [校正支援ツール「textlint」](https://textlint.github.io/)
+  - [株式会社SmartHRによるtextlint用の校正ルールセット](https://shanaiho.smarthr.co.jp/n/n881866630eda)
+
+Re:VIEWは[特別な記法で書かれるテキストデータ](https://github.com/kmuto/review/blob/master/doc/format.ja.md)を使う書籍作成ツールです。このツールを使うと印刷用PDFと電子書籍用EPUBを作成できます。このツールに必要なのはテキストデータなので、[Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)や[Vim](https://www.vim.org/)、[GNU Emacs](https://www.gnu.org/software/emacs/)などのテキストエディタで編集してください。Microsoft Wordや一太郎などのワープロソフトは使えませんが、Re:VIEW記法がわからないという方はワープロソフトで文章をお送りください。こちらでRe:VIEW記法に転記いたします。なお、その場合は原稿は横組みで作成してください。
