@@ -23,7 +23,7 @@ language: ja
 # 書名
 # 読みを入れる例 booktitle: {name: "Re:VIEW EPUBサンプル", file-as: "リビューイーパブサンプル"}
 booktitle: "現代焚書 第5号"
-subtitle: "きっと何者にもなれない私たち"
+subtitle: "何者にもなれなかった私たち"
 
 # 著者名。「, 」で区切って複数指定できる
 # 読みを入れる例 aut: [{name: "青木峰郎", file-as: "アオキミネロウ"}, {name: "武藤健志", file-as: "ムトウケンシ"}, {name: "高橋征義", file-as: "タカハシマサヨシ"}, {name: "角征典", file-as: "カドマサノリ"}]
@@ -67,7 +67,7 @@ prt: ねこのしっぽ
 # a-trc, trc: 筆記・タイプ作業者
 # a-trl, trl: 翻訳者
 
-# contact: 連絡先
+contact: iosha@huideyeren.info
 
 # 刊行日(省略した場合は実行時の日付)
 date: 2021-12-31
@@ -219,7 +219,7 @@ page_metric: B5
 #   mathml: MathML変換。別途math_ml gemファイルが必要。EPUBMaker/WebMakerのみ効果
 #   imgmath: 画像化。オプションはimgmath_optionsで設定する
 #   mathjax: MathJax変換。EPUBMaker/WebMakerのみ効果。なお、MathJaxに必要なデータはインターネットから取得される。EPUBで利用できるかはEPUBリーダ依存
-# math_format: null
+math_format: mathml
 
 # math_formatがimgmathの場合の設定
 # 以下のパラメータを有効にするときには、
@@ -357,7 +357,8 @@ texstyle: ["reviewmacro"]
 # LaTeX用のdocumentclassを指定する
 # オプションについてはsty/README.mdを参照
 # デフォルトは印刷用。電子配布版を作るには media=ebook とする
-texdocumentclass: ["review-jsbook", "paper=b5,serial_pagination=true,cameraready=ebook,cover=false,hiddenfolio=shippo,fontsize=14Q,line_length=40zw,number_of_lines=34,baselineskip=25.5H"]
+# texdocumentclass: ["review-jsbook", "paper=b5,serial_pagination=true,cameraready=ebook,cover=false,hiddenfolio=shippo,fontsize=10pt,line_length=40zw,number_of_lines=34,baselineskip=25.5H"]
+texdocumentclass: ["review-jsbook", "paper=b5,serial_pagination=true,cameraready=print,hiddenfolio=shippo,fontsize=14Q,line_length=40zw,number_of_lines=34,baselineskip=25.5H"]
 #
 # LaTeX用のコマンドを指定する
 # texcommand: "uplatex"
