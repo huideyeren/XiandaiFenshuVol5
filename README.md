@@ -8,7 +8,7 @@ Sorry, but the book will be written in Japanese, and the project is in Japanese 
 
 ## ライセンスについて （About LICENSE）
 
-![クリエイティブ・コモンズ・ライセンス](https://i.creativecommons.org/l/by/4.0/88x31.png) 
+![クリエイティブ・コモンズ・ライセンス](https://i.creativecommons.org/l/by/4.0/88x31.png)
 
 この書籍は著作権法上認められる引用の範囲内において引用した資料を除き、 [クリエイティブ・コモンズ 表示 4.0 国際 ライセンス](http://creativecommons.org/licenses/by/4.0/) の下に提供されています。引用した資料のライセンスについてはオリジナルのライセンスに従います。
 
