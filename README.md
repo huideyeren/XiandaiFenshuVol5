@@ -70,6 +70,8 @@ Macの方は……後日紹介します。
 
 Linuxの方は……GitHubを使いこなすのはおそらく朝飯前かと思われるので何も言いません。
 
+他にも、[「世の中の小説作家と編集者は今すぐ Word や G Suite を窓から投げ捨てて Git と GitHub の使い方を覚えるべきだ」（Qiita）](https://qiita.com/ktkraoichi/items/f6ad43c2da0b3136d6be)の[著者がGitとGitHubの使い方に関する連載記事を書いています](https://qiita.com/ktkraoichi)。
+
 一応、[何かわからなくなったら公式マニュアルを読んでください](https://docs.github.com/ja)。ただし、一応日本語は用意されていますが、機械翻訳を使っていていろいろと残念な翻訳になっているところがあったり、まだ翻訳がなされていなかったりします。
 
 GitHub上のファイルを読み書きするにはGitと呼ばれるバージョン管理ツールが必要です……が、このGitというツールはコマンドラインで操作するツールです。なので、コマンドラインとかShellとか聞いてナニコレと思った人は[GitHub Desktop](https://desktop.github.com/)を使うとよいと思います。
