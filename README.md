@@ -6,7 +6,7 @@ Sorry, but the book will be written in Japanese, and the project is in Japanese 
 
 恢徳堂が2021年12月のコミックマーケット99で頒布する予定の『現代焚書第5号 −何者にもなれなかった私たち−』の原稿を格納するリポジトリです。
 
-寄稿したいと思う方や査読したいと思う方は、このドキュメントと[ディスカッション](https://github.com/huidetang/XiandaiFenshuVol5/discussions)の内容をよく読んだうえで、ディスカッションに
+寄稿したいと思う人や査読したいと思う人は、このドキュメントと[ディスカッション](https://github.com/huidetang/XiandaiFenshuVol5/discussions)の内容をよく読んだうえで、[ディスカッションの協力希望のカテゴリ](https://github.com/huidetang/XiandaiFenshuVol5/discussions/categories/%E5%8D%94%E5%8A%9B%E5%B8%8C%E6%9C%9B)に記載してください。
 
 ## ライセンスについて （About LICENSE）
 
