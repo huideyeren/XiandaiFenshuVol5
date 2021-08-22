@@ -28,6 +28,10 @@ jobs:
           reviewdog_version: latest
           submodule: recursive
 
+      - name: Update submodules
+        id: update
+        run: git submodule update --remote --recursive 
+
         #textlintを動かすためのnodeアクション
       - uses: actions/setup-node@v2
 
