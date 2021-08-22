@@ -76,19 +76,7 @@ Linuxの方は……GitHubを使いこなすのはおそらく朝飯前かと思
 
 GitHub上のファイルを読み書きするにはGitと呼ばれるバージョン管理ツールが必要です……が、このGitというツールはコマンドラインで操作するツールです。なので、コマンドラインとかShellとか聞いてナニコレと思った人は[GitHub Desktop](https://desktop.github.com/)を使うとよいと思います。
 
-GitHubのもとになっているGitにはブランチと呼ばれる、変更を分岐させて記録できる機能があります。基本的には `main` というブランチが現時点での正式版になります。ただし、直接 `main` ブランチに変更は反映できません。 `main` ブランチに成果を反映したい場合はプルリクエストを作成してください。査読の上で反映いたします。
-
-GitHubには[Issues](https://github.com/huidetang/XiandaiFenshuVol5/issues)と呼ばれる修正を議論する場があります。何か問題があれば、ここに書き込んでください。誤字脱字レベルから記事の方向性に関することまでなんでもお寄せください。さらに、GitHubには[Discussions](https://github.com/huidetang/XiandaiFenshuVol5/discussions)と呼ばれる掲示板もあります。なお、基本的に[主筆からのお知らせ](https://github.com/huidetang/XiandaiFenshuVol5/discussions/categories/%E4%B8%BB%E7%AD%86%E3%81%8B%E3%82%89%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B)はこのDiscussionsで告知されます。プロジェクト管理ツールとしてタスクかんばんというツールがありますが、GitHubにも [Projects](https://github.com/huidetang/XiandaiFenshuVol5/projects/1) というタスクかんばんがあります。このタスクかんばんは状態を確認するのに使います。使い方はあとで書きます。
-
-最後に、GitHubにはActionsという、自動でさまざまなタスクを行なう機能があります。このプロジェクトでは後述するtextlintでの校正とRe:VIEWによるPDFおよびEPUBに変換しています。
-
-#### textlintについて
-
-textlintはオープンソースの校正支援ツールです。すべての校正ができるわけではありませんが、校正ルールを設定しておくとルールから外れた書き方で書いた場合に警告やエラーを出してくれます。現状textlintでエラーがない場合のみPDFやEPUBへの変換が行われるしくみになっています。引っかかったエラーがある場合はGitHub Actionsの結果に表示されます。校正ルールは株式会社SmartHR提供のものを使用しています。
-
-エラーはVisual Studio Codeでは赤い波線で表示されます。これが残ったままPDFとEPUBの生成が行われないので、このエラーはGitHubに送信する前に直しておく必要があります。
-
-警告はVisual Studio Codeでは黄色い波線で表示されます。警告は修正が望ましいのですが、修正しなくてもチェックは通ります。
+GitHubのもとになっているGitにはブランチと呼ばれる、変更を分岐させて記録できる機能があります。
 
 #### Visual Studio Codeについて
 
