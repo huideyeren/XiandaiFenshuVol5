@@ -12,5 +12,15 @@
     },
     "plugins": [
         "review"
-    ]
+    ],
+    "filters": {
+        "comments": {
+            // enable comment directive
+            // if comment has the value, then enable textlint rule
+            "enablingComment": "textlint-enable",
+            // disable comment directive
+            // if comment has the value, then disable textlint rule
+           "disablingComment": "textlint-disable"
+        }
+    }
 }
