@@ -32,8 +32,20 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          submodule: recursive
+
+      - name: SSH Setting
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+        run: |
+          mkdir -p /home/runner/.ssh/
+          echo -e "$TOKEN" > /home/runner/.ssh/id_rsa
+          chmod 600 /home/runner/.ssh/id_rsa
+
+      - name: Checkout submodules
+        shell: bash
+        run: |
+          git submodule sync --recursive
+          git submodule update --init --force --recursive
 
       - name: cache-node-modules
         #stepsが失敗(文章の乱れ)した場合でもcacheを取得するようにする
