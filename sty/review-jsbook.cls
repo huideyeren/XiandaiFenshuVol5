@@ -44,7 +44,7 @@
 \PassOptionsToPackage{nosetpagesize}{graphicx}%%for TL16 or higher version
 }{}
 
-\RequirePackage{xkeyval,everypage}%%,etoolbox
+\RequirePackage{xkeyval,everypage-1x}%%,etoolbox
 
 %% useful helpers
 \newcommand\recls@get@p@[2]{%
