@@ -34,10 +34,6 @@ jobs:
         with:
           submodule: recursive
 
-      - name: Update submodules
-        id: update
-        run: git submodule update --remote --recursive 
-
       - name: cache-node-modules
         #stepsが失敗(文章の乱れ)した場合でもcacheを取得するようにする
         uses: pat-s/always-upload-cache@v2.1.3
