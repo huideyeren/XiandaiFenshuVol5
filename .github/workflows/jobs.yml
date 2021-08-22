@@ -54,7 +54,7 @@ jobs:
 
       - name: Execute textlint
         run: |
-          npx textlint -f checkstyle *.re wiki/*.md README.md >> .textlint.log
+          npx textlint -f checkstyle chapter/*.re wiki/*.md README.md >> .textlint.log
 
       - name: Run reviewdog
         # textlintで文章上のミスがあった場合のみ、reviewdogを実行させるようにする
