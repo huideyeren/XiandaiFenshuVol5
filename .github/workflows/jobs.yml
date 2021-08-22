@@ -32,11 +32,10 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v2
-      
-      - name: Checkout submodules
-        run: git submodule update --init --recursive
+        with:
+          submodule: recursive
 
-      - name: Cache node modules
+      - name: cache-node-modules
         #stepsが失敗(文章の乱れ)した場合でもcacheを取得するようにする
         uses: pat-s/always-upload-cache@v2.1.3
         env:
