@@ -51,12 +51,7 @@ jobs:
       
       - name: Install dependent module
         run: npm install
-      
-      - name: ls
-        run: ls wiki/*.md >> .ls.log
-      
-      - run: cat .ls.log
-      
+
       - name: Execute textlint
         run: |
           npx textlint -f checkstyle *.re wiki/*.md README.md >> .textlint.log
