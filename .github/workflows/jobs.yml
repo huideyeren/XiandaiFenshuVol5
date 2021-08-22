@@ -53,7 +53,9 @@ jobs:
         run: npm install
       
       - name: ls
-        run: ls wiki
+        run: ls wiki >> .ls.log
+      
+      - run: cat .ls.log
       
       - name: Execute textlint
         run: |
