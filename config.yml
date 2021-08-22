@@ -445,8 +445,25 @@ pdfmaker:
   # optionsはキャプションなし囲みに対するtcolorboxの追加・上書きオプション
   # options_with_captionはキャプション付き囲みのtcolorboxの追加・上書きオプション（省略した場合はoptionsと同じ）
   #
-  # boxsetting:
-  #   note:
+  boxsetting:
+    column:
+      style: marker
+    note:
+      style: marker
+    memo:
+      style: marker
+    tip:
+      style: marker
+    info:
+      style: marker
+    warning:
+      style: marker
+    important:
+      style: marker
+    caution:
+      style: marker
+    notice:
+      style: marker
   #     style: squarebox
   #     options: "colback=black!5!white"
   #     options_with_caption: "colbacktitle=black!25!white"
