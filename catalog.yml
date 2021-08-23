@@ -2,7 +2,8 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - 2_1_clone.re
+  - ashiato.re
+  - clone.re
 
 APPENDIX:
 
