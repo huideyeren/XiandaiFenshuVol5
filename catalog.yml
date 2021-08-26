@@ -2,8 +2,10 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - ashiato.re
-  - clone.re
+  - 10周年の今だから考える「輪るピングドラム」論:
+    - ashiato.re
+  - 競馬ファン歴25年が語る「ウマ娘」と競馬:
+    - clone.re
 
 APPENDIX:
 
