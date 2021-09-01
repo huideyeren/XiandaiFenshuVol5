@@ -358,7 +358,7 @@ texstyle: ["reviewmacro"]
 # オプションについてはsty/README.mdを参照
 # デフォルトは印刷用。電子配布版を作るには media=ebook とする
 # texdocumentclass: ["review-jsbook", "paper=b5,serial_pagination=true,cameraready=ebook,cover=false,hiddenfolio=shippo,fontsize=10pt,line_length=40zw,number_of_lines=34,baselineskip=25.5H"]
-texdocumentclass: ["utbook", "oneside,twocolumn,b5paper,tombow"]
+texdocumentclass: ["utbook", "oneside,twocolumn,b5paper,tombow,reclscover=false"]
 #
 # LaTeX用のコマンドを指定する
 # texcommand: "uplatex"
