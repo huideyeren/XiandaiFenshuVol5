@@ -22,7 +22,7 @@ language: ja
 
 # 書名
 # 読みを入れる例 booktitle: {name: "Re:VIEW EPUBサンプル", file-as: "リビューイーパブサンプル"}
-booktitle: "現代焚書 第5号"
+booktitle: "現代焚書 第５号"
 subtitle: "何者にもなれなかった私たち"
 
 # 著者名。「, 」で区切って複数指定できる
