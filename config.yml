@@ -385,7 +385,7 @@ pdfmaker:
   # TeX版で利用する表紙画像。
   # 仕上がりサイズ+塗り足し3mmありのPDFまたはIllustratorファイル（PDF互換オプション付き）を推奨。
   # 拡縮はされず「そのまま」貼り付けられる
-  coverimage: cover-a5.ai
+  # coverimage: cover-a5.ai
   #
   # TeXコンパイル前に実行するプログラム。変換後のTeXソースを調整したいときに使用する。
   # 渡される引数1=作業用展開ディレクトリ、引数2=呼び出しを実行したディレクトリ
@@ -445,25 +445,25 @@ pdfmaker:
   # optionsはキャプションなし囲みに対するtcolorboxの追加・上書きオプション
   # options_with_captionはキャプション付き囲みのtcolorboxの追加・上書きオプション（省略した場合はoptionsと同じ）
   #
-  boxsetting:
-    column:
-      style: marker
-    note:
-      style: marker
-    memo:
-      style: marker
-    tip:
-      style: marker
-    info:
-      style: marker
-    warning:
-      style: marker
-    important:
-      style: marker
-    caution:
-      style: marker
-    notice:
-      style: marker
+  # boxsetting:
+  #   column:
+  #     style: marker
+  #   note:
+  #     style: marker
+  #   memo:
+  #     style: marker
+  #   tip:
+  #     style: marker
+  #   info:
+  #     style: marker
+  #   warning:
+  #     style: marker
+  #   important:
+  #     style: marker
+  #   caution:
+  #     style: marker
+  #   notice:
+  #     style: marker
   #     style: squarebox
   #     options: "colback=black!5!white"
   #     options_with_caption: "colbacktitle=black!25!white"
