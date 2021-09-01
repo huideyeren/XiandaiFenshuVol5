@@ -112,12 +112,12 @@ epubversion: 3
 htmlversion: 5
 
 # 目次として抽出する見出しレベル
-toclevel: 2
+toclevel: 1
 
 # 採番の設定。採番させたくない見出しには「==[nonum]」のようにnonum指定をする
 #
 # 本文でセクション番号を表示する見出しレベル
-secnolevel: 3
+secnolevel: 1
 
 # 本文中に目次ページを作成するか。省略した場合はnull (作成しない)
 toc: true
@@ -445,25 +445,25 @@ pdfmaker:
   # optionsはキャプションなし囲みに対するtcolorboxの追加・上書きオプション
   # options_with_captionはキャプション付き囲みのtcolorboxの追加・上書きオプション（省略した場合はoptionsと同じ）
   #
-  # boxsetting:
-  #   column:
-  #     style: marker
-  #   note:
-  #     style: marker
-  #   memo:
-  #     style: marker
-  #   tip:
-  #     style: marker
-  #   info:
-  #     style: marker
-  #   warning:
-  #     style: marker
-  #   important:
-  #     style: marker
-  #   caution:
-  #     style: marker
-  #   notice:
-  #     style: marker
+  boxsetting:
+    column:
+      style: marker
+    note:
+      style: marker
+    memo:
+      style: marker
+    tip:
+      style: marker
+    info:
+      style: marker
+    warning:
+      style: marker
+    important:
+      style: marker
+    caution:
+      style: marker
+    notice:
+      style: marker
   #     style: squarebox
   #     options: "colback=black!5!white"
   #     options_with_caption: "colbacktitle=black!25!white"
