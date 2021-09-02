@@ -34,7 +34,7 @@ module ReVIEW
       end
 
       def inline_bib(id)
-        macro('reviewbibref', "[#{@chapter.bibpaper(id).number}]", "bib:#{bib_label(id)}")
+        macro('reviewbibref', @chapter.bibpaper(id).numbers, bib_label(id))
       end
 
       def bibpaper(lines, id, caption)
