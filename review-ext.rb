@@ -33,6 +33,10 @@ module ReVIEW
         app_error "unknown footnote: #{id}"
       end
 
+      def inline_bib(id)
+        macro('cite', bib_label(id))
+      end
+
       def bibpaper(lines, id, caption)
         puts %Q(\\bibitem{bib:#{id}} #{split_paragraph(lines).join("\n\n")})
       end
