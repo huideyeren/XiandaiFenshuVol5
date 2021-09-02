@@ -34,7 +34,7 @@ module ReVIEW
       end
 
       def inline_bib(id)
-        macro('reviewbibref', @chapter.bibpaper(id).number, bib_label(id))
+        puts %Q(\\bibitem[#{escape(id)}]{bib:#{id}} #{split_paragraph(lines).join("\n\n")})
       end
 
       def bibpaper(lines, id, caption)
