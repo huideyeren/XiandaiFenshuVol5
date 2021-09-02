@@ -18,8 +18,27 @@ module ReVIEW
         end
       end
     end
+
+    module LATEXBuilderOverride
+      def inline_fn(id)
+        if @book.config['footnotetext']
+          macro("footnotemark[#{@chapter.footnote(id).number}]", '')
+        elsif @doc_status[:caption] || @doc_status[:table] || @doc_status[:column] || @doc_status[:dt]
+          @foottext[id] = @chapter.footnote(id).number
+          macro('protect\\footnotemark', '')
+        else
+          macro('endnote', compile_inline(@chapter.footnote(id).content.strip))
+        end
+      rescue KeyError
+        app_error "unknown footnote: #{id}"
+      end
+    end
   
     class HTMLBuilder
       prepend HTMLBuilderOverride
+    end
+
+    class LATEXBuilder
+      prepend LATEXBuilderOverride
     end
   end
