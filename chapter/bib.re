@@ -1,5 +1,9 @@
 = 参考文献
 
+//embed[latex]{
+\begin{thebibliography}{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+//}
+
 //bibpaper[bibleOrthodox][正教会訳聖書]{
   聖ニコライ・中井木菟麻呂訳『正教会訳聖書』
 //}
@@ -136,4 +140,8 @@
 //}
 //bibpaper[lords_prayer][天主経]{
   祈祷文「天主経」（聖ニコライ・中井木菟麻呂訳の原文による）
+//}
+
+//embed[latex]{
+\end{thebibliography}
 //}

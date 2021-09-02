@@ -32,6 +32,10 @@ module ReVIEW
       rescue KeyError
         app_error "unknown footnote: #{id}"
       end
+
+      def bibpaper(lines, id, caption)
+        puts %Q(\\bibitem[#{escape(id)}]{bib:#{id}} #{split_paragraph(lines).join("\n\n")})
+      end
     end
   
     class HTMLBuilder
