@@ -34,7 +34,7 @@ module ReVIEW
       end
 
       def bibpaper(lines, id, caption)
-        puts %Q(\\bibitem[#{escape(id)}]{bib:#{id}} #{split_paragraph(lines).join("\n\n")})
+        puts %Q(\\bibitem{bib:#{id}} #{split_paragraph(lines).join("\n\n")})
       end
     end
   

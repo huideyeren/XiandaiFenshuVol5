@@ -1,7 +1,7 @@
 = 参考文献
 
 //embed[latex]{
-\begin{thebibliography}{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+\begin{thebibliography}{99}
 //}
 
 //bibpaper[bibleOrthodox][正教会訳聖書]{
