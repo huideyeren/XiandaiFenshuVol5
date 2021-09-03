@@ -74,6 +74,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install gems.
         run: bundle install
+      - name: Rotate images.
+        run: python rotate.py
       - name: Build PDF.
         run: bundle exec rake clean pdf
       - name: Upload artifact.
