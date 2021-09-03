@@ -14,10 +14,10 @@ def bundle_rotate(dir):
     ext_list = []
 
     for i in path_list:
-        print("Open: " + i)
+        print("Open: " + (str)i)
         img = rotate(i)
         img.save(i)
-        print("Saved: " + i)
+        print("Saved: " + (str)i)
     return
 
 bundle_rotate('./images')
