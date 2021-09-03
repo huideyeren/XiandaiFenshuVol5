@@ -1,16 +1,14 @@
 % for user-defined macro
+\usepackage[dvips]{graphicx}
 
 \jlreqsetup{endnote_position={_chapter}}
 
 \renewcommand{\reviewbibref}[2]{\cite{#2}}
 
-%画像まわり再定義
-\makeatletter
-\renewcommand{\thefigure}{%
- %\ifnum\c@chapter>\z@\thechapter{}・\fi\rensuji{\@arabic\c@figure} %%画像のキャプションに余計な文字や数字を入れない
- }
-\def\fps@figure{tbp}
-\def\ftype@figure{1}
-\def\ext@figure{lof}
-\def\fnum@figure{\figurename\thefigure}
-\makeatother
+\begin{figure}[p]
+\rotatebox{90}{ % 90度回転START
+\begin{minipage}{.70\linewidth}
+\includegraphics[width=\linewidth,angle=90]{image.eps}
+\end{minipage}
+} % 90度回転END
+\end{figure}
