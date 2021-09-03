@@ -5,6 +5,6 @@
 \renewcommand{\reviewbibref}[2]{\cite{#2}}
 
 \makeatletter
-\def\@cite#1#2{\jlreq@rensuji{[{#1\if@tempswa , #2\fi}]}}
-\def\@biblabel#1{\jlreq@rensuji{[#1]}}
+\def\@cite#1#2{\rensuji{[{#1\if@tempswa , #2\fi}]}}
+\def\@biblabel#1{\rensuji{[#1]}}
 \makeatother

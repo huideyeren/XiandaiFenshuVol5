@@ -26,7 +26,7 @@ module ReVIEW
 
       def bibpaper_header(id, caption)
         print %Q(<a id="bib-#{normalize_id(id)}">)
-        print "[<span class="tcy">#{@chapter.bibpaper(id).number}</span>]"
+        print %Q([<span class="tcy">#{@chapter.bibpaper(id).number}</span>])
         print '</a>'
         puts " #{compile_inline(caption)}"
       end
