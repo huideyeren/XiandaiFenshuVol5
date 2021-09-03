@@ -34,11 +34,11 @@ module ReVIEW
       end
 
       def inline_bib(id)
-        macro('reviewbibref', %Q([\\jlreq@rensuji{#{@chapter.bibpaper(id).number}}]), bib_label(id))
+        macro('reviewbibref', %Q([\\jlreq@rensuji{[#{@chapter.bibpaper(id).number}]}]), bib_label(id))
       end
 
       def bibpaper(lines, id, caption)
-        puts %Q(\\bibitem[\\jlreq@rensuji{#{@chapter.bibpaper(id).number}}]{#{bib_label(id)}} #{split_paragraph(lines).join("\n\n")})
+        puts %Q(\\bibitem[\\jlreq@rensuji{[#{@chapter.bibpaper(id).number}]}]{#{bib_label(id)}} #{split_paragraph(lines).join("\n\n")})
       end
     end
   
