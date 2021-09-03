@@ -17,6 +17,19 @@ module ReVIEW
           puts %Q(<div class="footnote" id="fn-#{normalize_id(id)}"><p class="footnote">&lt;<a href="#fnb-#{normalize_id(id)}"><span class="tcy">#{@chapter.footnote(id).number}</span></a>&gt; #{compile_inline(str)}</p></div>)
         end
       end
+
+      def inline_bib(id)
+        %Q(<a href="#{@book.bib_file.gsub(/\.re\Z/, ".#{@book.config['htmlext']}")}#bib-#{normalize_id(id)}">[<span class="tcy">#{@chapter.bibpaper(id).number}</span>]</a>)
+      rescue KeyError
+        app_error "unknown bib: #{id}"
+      end
+
+      def bibpaper_header(id, caption)
+        print %Q(<a id="bib-#{normalize_id(id)}">)
+        print "[<span class="tcy">#{@chapter.bibpaper(id).number}</span>]"
+        print '</a>'
+        puts " #{compile_inline(caption)}"
+      end
     end
 
     module LATEXBuilderOverride
@@ -34,7 +47,7 @@ module ReVIEW
       end
 
       def inline_bib(id)
-        macro('reviewbibref', @chapter.bibpaper(id).number, bib_label(id))
+        macro('reviewbibref', "[#{@chapter.bibpaper(id).number}]", bib_label(id))
       end
 
       def bibpaper(lines, id, caption)
