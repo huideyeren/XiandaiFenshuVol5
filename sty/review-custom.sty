@@ -3,3 +3,14 @@
 \jlreqsetup{endnote_position={_chapter}}
 
 \renewcommand{\reviewbibref}[2]{\cite{#2}}
+
+%画像まわり再定義
+\makeatletter
+\renewcommand{\thefigure}{%
+ %\ifnum\c@chapter>\z@\thechapter{}・\fi\rensuji{\@arabic\c@figure} %%画像のキャプションに余計な文字や数字を入れない
+ }
+\def\fps@figure{tbp}
+\def\ftype@figure{1}
+\def\ext@figure{lof}
+\def\fnum@figure{\figurename\thefigure}
+\makeatother
