@@ -20,4 +20,4 @@ def bundle_rotate(dir):
         print(i)
     return
 
-bundle_rotate('./images')
+bundle_rotate('/docs/images')
