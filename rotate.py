@@ -25,4 +25,4 @@ def bundle_rotate(dir):
         img.save(out_path)
     return
 
-bundle_rotate('/docs/images')
+bundle_rotate('./images')

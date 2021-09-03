@@ -75,7 +75,7 @@ jobs:
       - name: Install gems.
         run: bundle install
       - name: Rotate images.
-        run: python rotate.py
+        run: python3 rotate.py
       - name: Build PDF.
         run: bundle exec rake clean pdf
       - name: Upload artifact.
