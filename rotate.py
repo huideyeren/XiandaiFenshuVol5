@@ -19,7 +19,7 @@ def bundle_rotate(dir):
         name_list.append(name)
         ext_list.append(ext)
 
-        out_path = os.path.join(*[dir, name + '_resize' + ext])
+        out_path = os.path.join(*[dir, name + ext])
 
         img = rotate(i)
         img.save(out_path)
