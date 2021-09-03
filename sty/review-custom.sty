@@ -4,3 +4,7 @@
 
 \renewcommand{\reviewbibref}[2]{\cite{#2}}
 
+\if@tate
+  \def\@cite#1{\rensuji{[#1]}}
+  \def\@biblabel#1{\rensuji{[#1]}}
+\fi
