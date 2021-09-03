@@ -34,6 +34,9 @@
   Rootport「児童虐待はヒトの本能なのか？」２０１８年@<tcy>{6}月@<tcy>{17}日発表@<br>{}
   @<href>{http://rootport.hateblo.jp/entry/2018/06/17/215021}
 //}
+//bibpaper[dekisokonai][福岡　２００８]{
+  福岡伸一『できそこないの男たち』光文社、２００８年
+//}
 
 //embed[latex]{
 \end{thebibliography}
