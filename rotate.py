@@ -14,15 +14,8 @@ def bundle_rotate(dir):
     ext_list = []
 
     for i in path_list:
-        file = os.path.basename(i)
-        name, ext = os.path.splitext(file)
-        name_list.append(name)
-        ext_list.append(ext)
-
-        out_path = os.path.join(*[dir, name + ext])
-
         img = rotate(i)
-        img.save(out_path)
+        img.save(i)
     return
 
 bundle_rotate('./images')
