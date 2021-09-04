@@ -7,10 +7,37 @@
 	},
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"settings": {
+		"editor.renderWhitespace": "all",
+		"editor.renderControlCharacters": true,
+		"git.suggestSmartCommit": true,
+		"textlint.languages": [
+			"review"
+		]
+	},
 
 	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [],
+	"extensions": [
+		"atsushieno.language-review",
+        "taichi.vscode-textlint",
+        "coenraads.bracket-pair-colorizer-2",
+        "8amjp.charactercount",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "felipecaputo.git-project-manager",
+        "github.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "ms-ceintl.vscode-language-pack-ja",
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-mermaid",
+        "darkriszty.markdown-table-prettify",
+        "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+        "yzane.markdown-pdf",
+        "christian-kohler.path-intellisense",
+        "cssho.vscode-svgviewer",
+        "takanotume24.pdf",
+        "kisstkondoros.vscode-gutter-preview"
+	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
@@ -22,5 +49,5 @@
 	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	// "remoteUser": "vscode"
 }
