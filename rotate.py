@@ -1,5 +1,5 @@
 import glob
-from os import path
+from os import getcwd
 import sys
 
 from PIL import Image
@@ -21,8 +21,6 @@ def bundle_rotate(dir):
         print(i)
     return
 
-args = sys.argv
-
-image_path = args[0] + "/images"
+image_path = getcwd() + "/images"
 print(image_path)
 bundle_rotate(image_path)
