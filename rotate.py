@@ -10,7 +10,7 @@ def rotate(path):
     return rotated_image
 
 def bundle_rotate(dir):
-    path_list = glob.glob(dir + '\*')
+    path_list = glob.glob(dir + '/*')
     name_list = []
     ext_list = []
 
