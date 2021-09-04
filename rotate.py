@@ -10,9 +10,9 @@ def rotate(path):
     return rotated_image
 
 def bundle_rotate(dir):
-    path_list = glob.glob(dir + '/*')
-    name_list = []
-    ext_list = []
+    path_list = []
+    for ext in ('*.gif', '*.png', '*.jpg', '*.jpeg'):
+        path_list.extend(glob(join(dir, ext)))
 
     for i in path_list:
         print(i)
