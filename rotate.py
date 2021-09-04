@@ -1,6 +1,6 @@
 import glob
 from os import getcwd
-import sys
+from os.path import join
 
 from PIL import Image
 
@@ -12,7 +12,7 @@ def rotate(path):
 def bundle_rotate(dir):
     path_list = []
     for ext in ('*.gif', '*.png', '*.jpg', '*.jpeg'):
-        path_list.extend(glob(join(dir, ext)))
+        path_list.extend(glob.glob(join(dir, ext)))
 
     for i in path_list:
         print(i)
