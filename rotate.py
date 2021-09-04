@@ -1,5 +1,5 @@
 import glob
-import os
+import sys
 
 from PIL import Image
 
@@ -20,4 +20,7 @@ def bundle_rotate(dir):
         print(i)
     return
 
-bundle_rotate('/github/workspace/images')
+args = sys.argv
+
+image_path = args[0] + "/images"
+bundle_rotate(image_path)

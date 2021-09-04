@@ -75,7 +75,7 @@ jobs:
       - name: Install gems.
         run: bundle install
       - name: Rotate images.
-        run: pwd >> rotate.log && python3 rotate.py >> rotate.log
+        run: pwd | python3 rotate.py >> rotate.log
       - name: Show rotate.log
         run: cat .textlint.log
       - name: Build PDF.
