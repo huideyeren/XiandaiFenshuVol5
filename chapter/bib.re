@@ -1,7 +1,7 @@
 = 参考文献
 
 //embed[latex]{
-\begin{thebibliography}{aaaaaaa}
+\begin{thebibliography}{ああああああああああああああああ}
 //}
 
 //bibpaper[clone_catholic][日本カトリック教会　１９９７]{
