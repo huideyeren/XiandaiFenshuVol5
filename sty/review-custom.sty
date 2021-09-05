@@ -16,11 +16,11 @@
        \jlreq@iftdir{\clearpage\yoko\jlreq@resttatetrue}{\jlreq@resttatefalse}% 常に横書きにする
        \begin{titlepage}
        \thispagestyle{empty}
-       \curlyframe{
+       \artdecoframe{%
        \begin{center}%
        \mbox{}%
        \vskip5\zw
-       %\reviewtitlefont%
+       \reviewtitlefont%
        {\Huge\review@booktitlename\par}%
        \ifdefined\review@subtitlename
          \vskip 1em%
@@ -41,6 +41,7 @@
        }
        \end{titlepage}\clearpage
        \ifjlreq@resttate\tate\fi
+    }
   }{%
     \def\reviewtitlepagecont{\review@titlefile}
   }
