@@ -1,4 +1,48 @@
 % for user-defined macro
+\usepackage{niceframe}
+
 \jlreqsetup{endnote_position={_chapter}}
 
 \renewcommand{\reviewbibref}[2]{\cite{#2}}
+
+\makeatletter
+\def\contentsline#1#2#3#4{\csname l@#1\endcsname{\hyper@linkstart{link}{#4}{#2}\hyper@linkend}{\rensuji{#3}}}
+\makeatother
+
+% titlepage
+\ifdefined\review@titlepage
+  \ifthenelse{\isundefined{\review@titlefile}}{%
+    \def\reviewtitlepagecont{%
+       \jlreq@iftdir{\clearpage\yoko\jlreq@resttatetrue}{\jlreq@resttatefalse}% 常に横書きにする
+       \begin{titlepage}
+       \thispagestyle{empty}
+       \curlyframe{
+       \begin{center}%
+       \mbox{}%
+       \vskip5\zw
+       %\reviewtitlefont%
+       {\Huge\review@booktitlename\par}%
+       \ifdefined\review@subtitlename
+         \vskip 1em%
+         {\Large\review@subtitlename\par}%
+       \fi
+       \vskip 15em%
+       {\huge
+       \lineskip .75em
+       \begin{tabular}[t]{p{\textwidth}}%
+       \centering\review@titlepageauthors
+       \end{tabular}\par}%
+       \vfill
+       {\large\review@date \review@intn@edition%
+         \hspace{2\zw}%
+         \review@intn@publishedby\par}%
+       \vskip4\zw\mbox{}
+       \end{center}%
+       }
+       \end{titlepage}\clearpage
+       \ifjlreq@resttate\tate\fi
+    }
+  }{%
+    \def\reviewtitlepagecont{\review@titlefile}
+  }
+\fi
