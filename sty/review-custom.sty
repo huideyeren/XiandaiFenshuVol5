@@ -1,22 +1,4 @@
 % for user-defined macro
-\usepackage{niceframe}
-
 \jlreqsetup{endnote_position={_chapter}}
 
 \renewcommand{\reviewbibref}[2]{\cite{#2}}
-
-\renewenvironment{titlepage}{%
-  \jlreq@iftdir{\clearpage\yoko\jlreq@resttatetrue}{\jlreq@resttatefalse}% 
-  \if@twocolumn
-    \@restonecoltrue\onecolumn
-  \else
-    \@restonecolfalse\newpage
-  \fi
-  \thispagestyle{empty}%
-  \setcounter{page}{1}%
-}{%
-  \if@restonecol\twocolumn\else\newpage\fi
-  \if@twoside\else
-    \setcounter{page}{1}%
-  \fi
-}
