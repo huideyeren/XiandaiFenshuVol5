@@ -1,6 +1,5 @@
 % for user-defined macro
 \usepackage{niceframe}
-\usepackage{lscape}
 
 \jlreqsetup{endnote_position={_chapter}}
 
@@ -17,7 +16,6 @@
        \jlreq@oldfontcommand@enable
        \jlreq@iftdir{\clearpage\yoko\jlreq@resttatetrue}{\jlreq@resttatefalse}% 常に横書きにする
        \begin{titlepage}
-       \begin{landscape}
        \thispagestyle{empty}
        \begin{center}%
        \niceframe{%
@@ -42,7 +40,6 @@
        \vskip4\zw\mbox{}
        }
        \end{center}%
-       \end{landscape}
        \end{titlepage}\clearpage
        \ifx\jlreq@theindex@savedpagestyle\@undefined\else\expandafter\pagestyle\expandafter{\jlreq@theindex@savedpagestyle}\fi
        \let\jlreq@theindex@savedpagestyle\@undefined
@@ -60,7 +57,6 @@
     \def\reviewcolophonpagecont{%
 \jlreq@oldfontcommand@enable
 \jlreq@iftdir{\clearpage\yoko\jlreq@resttatetrue}{\jlreq@resttatefalse}% 常に横書きにする
-\begin{landscape}
 \reviewcolophon
 \thispagestyle{empty}
 \vspace*{\fill}
@@ -89,7 +85,6 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
-\end{landscape}
 \ifx\jlreq@theindex@savedpagestyle\@undefined\else\expandafter\pagestyle\expandafter{\jlreq@theindex@savedpagestyle}\fi
 \let\jlreq@theindex@savedpagestyle\@undefined
 \ifjlreq@resttate\tate\fi
