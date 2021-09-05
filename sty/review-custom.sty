@@ -42,13 +42,13 @@
        }
        \end{center}%
        \end{titlepage}\clearpage
+       \ifx\jlreq@theindex@savedpagestyle\@undefined\else\expandafter\pagestyle\expandafter{\jlreq@theindex@savedpagestyle}\fi
+       \let\jlreq@theindex@savedpagestyle\@undefined
+       \ifjlreq@resttate\tate\fi
+       \jlreq@oldfontcommand@disable
     }
   }{%
     \def\reviewtitlepagecont{\review@titlefile}
-    \ifx\jlreq@theindex@savedpagestyle\@undefined\else\expandafter\pagestyle\expandafter{\jlreq@theindex@savedpagestyle}\fi
-    \let\jlreq@theindex@savedpagestyle\@undefined
-    \ifjlreq@resttate\tate\fi
-    \jlreq@oldfontcommand@disable
   }
 \fi
 \makeatother
