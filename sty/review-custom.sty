@@ -13,7 +13,7 @@
 \ifdefined\review@titlepage
   \ifthenelse{\isundefined{\review@titlefile}}{%
     \def\reviewtitlepagecont{%
-       \jlreq@iftdir{\clearpage\yoko\jlreq@resttatetrue}{\jlreq@resttatefalse}% 常に横書きにする
+       \clearpage\yoko
        \begin{titlepage}
        \thispagestyle{empty}
        \begin{center}%
@@ -43,6 +43,6 @@
     }
   }{%
     \def\reviewtitlepagecont{\review@titlefile}
-    \ifjlreq@resttate\tate\fi
+    \tate
   }
 \fi
