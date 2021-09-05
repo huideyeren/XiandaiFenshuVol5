@@ -11,6 +11,7 @@
 
 % titlepage
 \makeatletter
+\newif\ifjlreq@resttate
 \ifdefined\review@titlepage
   \ifthenelse{\isundefined{\review@titlefile}}{%
     \def\reviewtitlepagecont{%
