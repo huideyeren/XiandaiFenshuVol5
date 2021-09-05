@@ -14,11 +14,12 @@
 \ifdefined\review@titlepage
   \ifthenelse{\isundefined{\review@titlefile}}{%
     \def\reviewtitlepagecont{%
-       \clearpage\yoko
+       \jlreq@oldfontcommand@enable
+       \jlreq@iftdir{\clearpage\yoko\jlreq@resttatetrue}{\jlreq@resttatefalse}% 常に横書きにする
        \begin{titlepage}
        \thispagestyle{empty}
        \begin{center}%
-       \artdecoframe{%
+       \niceframe{%
        \mbox{}%
        \vskip5\zw
        \reviewtitlefont%
@@ -44,7 +45,10 @@
     }
   }{%
     \def\reviewtitlepagecont{\review@titlefile}
-    \tate
+    \ifx\jlreq@theindex@savedpagestyle\@undefined\else\expandafter\pagestyle\expandafter{\jlreq@theindex@savedpagestyle}\fi
+    \let\jlreq@theindex@savedpagestyle\@undefined
+    \ifjlreq@resttate\tate\fi
+    \jlreq@oldfontcommand@disable
   }
 \fi
 \makeatother
