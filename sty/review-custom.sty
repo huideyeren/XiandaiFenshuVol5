@@ -117,6 +117,9 @@
 \fi
 
 % colophon
+\ifdefined\review@colophon
+  \ifthenelse{\isundefined{\review@colophonfile}}{%
+    \def\reviewcolophonpagecont{%
       \reviewcolophon
       \if@tate% 縦書き奥付
         \thispagestyle{empty}
