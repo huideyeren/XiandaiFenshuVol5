@@ -5,6 +5,11 @@
 
 \renewcommand{\reviewbibref}[2]{\cite{#2}}
 
+\if@tate
+  \def\@cite#1{\tatechuyoko{[#1]}}
+  \def\@biblabel#1{\tatechuyoko{[#1]}}
+\fi
+
 \patchcmd{\addcontentsline}{\thepage}{\tatechuyoko{\thepage}}{}{}
 
 \makeatletter
