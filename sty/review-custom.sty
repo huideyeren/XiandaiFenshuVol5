@@ -15,10 +15,23 @@
   \jlreqsetup{frontmatter_pagebreak={}}% これを入れないと大扉前に白が入る
 \fi
 
-\if@tate
-  \expandafter\includefullpagegraphics\expandafter[angle=90,\review@coverimageoption]{\review@coverimage}
-\else
-  \expandafter\includefullpagegraphics\expandafter[\review@coverimageoption]{\review@coverimage}
+\if@reclscover
+  \ifdefined\review@coverimage
+    \ifrecls@coverfitpage
+       \def\review@coverimageoption{width=\paperwidth,height=\paperheight}
+    \fi
+    \def\reviewcoverpagecont{%
+      \if@tate
+        \expandafter\includefullpagegraphics\expandafter[angle=90,\review@coverimageoption]{\review@coverimage}
+      \else
+        \expandafter\includefullpagegraphics\expandafter[\review@coverimageoption]{\review@coverimage}
+      \fi
+      \cleardoublepage
+    }
+  \fi
+  \ifdefined\review@coverfile
+    \def\reviewcoverpagecont{\review@coverfile}
+  \fi
 \fi
 
 \if@tate
