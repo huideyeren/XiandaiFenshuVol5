@@ -176,4 +176,60 @@
 \ifjlreq@resttate\tate\fi
 \jlreq@oldfontcommand@disable
 
+%. デフォルト設定
+%.. 見出し
+\if@tate
+  \renewcommand{\thepart}{\jlreq@Kanji{part}}
+  \str_if_eq:VnF \jlreq@article@type { article }{\renewcommand{\thechapter}{\jlreq@Kanji{chapter}}}
+  \renewcommand{\thesection}{\tatechuyoko*{\@arabic\c@section}}
+  \renewcommand{\thesubsection}{\tatechuyoko*{\@alph\c@subsection}}
+  \renewcommand{\thesubsubsection}{\tatechuyoko*{\@arabic\c@subsubsection}}
+  \renewcommand{\theparagraph}{(\tatechuyoko*{\@arabic\c@paragraph})}
+  \renewcommand{\thesubparagraph}{(\tatechuyoko*{\@arabic\c@subparagraph})}
+
+  \str_if_eq:VnTF \jlreq@article@type { article } {
+    \NewBlockHeading{part}{0}{font={\jlreq@keepbaselineskip{\LARGE}},indent=4\jlreq@zw,lines=4,after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},subtitle_font={\jlreq@keepbaselineskip{\large}}}
+    \if@twoside\ModifyHeading{part}{allowbreak_if_evenpage=true}\fi
+  }
+  {% book, report
+    \NewTobiraHeading{part}{-1}{label_format={第\thepart 部\hspace*{1\jlreq@zw}},format={\null\vfill {\Huge\hspace*{2\jlreq@zw}#1#2}\vspace*{2\jlreq@gol}}}
+    \NewBlockHeading{chapter}{0}{indent=2\jlreq@zw,lines=6,label_format={第\thechapter 章},font={\huge},after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},subtitle_font={\jlreq@keepbaselineskip{\Large}}}
+    \if@twoside\ModifyHeading{chapter}{allowbreak_if_evenpage=true}\fi
+    \renewcommand{\thechapter}{\jlreq@Kanji{chapter}}
+  }
+  \NewBlockHeading{section}{1}{font={\jlreq@keepbaselineskip{\Large}},indent=6\jlreq@zw,lines=3,after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},subtitle_font={\jlreq@keepbaselineskip{\normalsize}}}
+  \if@twoside\ModifyHeading{section}{allowbreak_if_evenpage=true}\fi
+  \NewBlockHeading{subsection}{2}{font={\jlreq@keepbaselineskip{\large}},indent=8\jlreq@zw,lines=2,after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},subtitle_font={\jlreq@keepbaselineskip{\small}}}
+  \if@twoside\ModifyHeading{subsection}{allowbreak_if_evenpage=true}\fi
+  \NewBlockHeading{subsubsection}{3}{font={\jlreq@keepbaselineskip{\normalsize}},indent=10\jlreq@zw,lines=1,before_lines=1,subtitle_break=false,after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},,subtitle_font={\jlreq@keepbaselineskip{\scriptsize}}}
+  \if@twoside\ModifyHeading{subsubsection}{allowbreak_if_evenpage=true}\fi
+  \NewRuninHeading{paragraph}{4}{font={\jlreq@keepbaselineskip{\normalsize}\sffamily\gtfamily\bfseries}}
+  \NewRuninHeading{subparagraph}{5}{font={\jlreq@keepbaselineskip{\normalsize}\sffamily\gtfamily\bfseries},indent=1\jlreq@zw}
+\else% yoko
+  \renewcommand{\thepart}{\Roman{part}}
+  \renewcommand{\thesubsection}{\thesection .\arabic{subsection}}
+  \renewcommand{\thesubsubsection}{\thesubsection .\arabic{subsubsection}}
+  \renewcommand{\theparagraph}{\thesubsubsection .\arabic{paragraph}}
+  \renewcommand{\thesubparagraph}{\theparagraph .\arabic{subparagraph}}
+  \str_if_eq:VnTF \jlreq@article@type { article } {
+\def\X{}
+    \NewBlockHeading{part}{0}{font={\jlreq@keepbaselineskip{\LARGE\sffamily\gtfamily\bfseries}},label_format={第\thepart 部},lines=4,after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},subtitle_font={\jlreq@keepbaselineskip{\large}}}
+    \renewcommand{\thesection}{\arabic{section}}
+  }{% book, report
+    \NewTobiraHeading{part}{-1}{label_format={第\thepart 部\hspace*{1\jlreq@gol}},format={\null\vfil {\Huge\sffamily\gtfamily\bfseries #1#2}\vfil}}
+    \NewBlockHeading{chapter}{0}{%
+      font={\jlreq@keepbaselineskip{\huge\sffamily\gtfamily\bfseries}},
+      label_format={第\thechapter 章},
+      lines=5,after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},
+      subtitle_font={\jlreq@keepbaselineskip{\Large}}}
+    \renewcommand{\thechapter}{\arabic{chapter}}
+    \renewcommand{\thesection}{\thechapter.\arabic{section}}
+  }
+  \NewBlockHeading{section}{1}{font={\jlreq@keepbaselineskip{\Large\sffamily\gtfamily\bfseries}},lines=3,after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},subtitle_font={\jlreq@keepbaselineskip{\normalsize}}}
+  \NewBlockHeading{subsection}{2}{font={\jlreq@keepbaselineskip{\large\sffamily\gtfamily\bfseries}},lines=2,after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},subtitle_font={\jlreq@keepbaselineskip{\small}}}
+  \NewBlockHeading{subsubsection}{3}{font={\jlreq@keepbaselineskip{\normalsize\sffamily\gtfamily\bfseries}},lines=1,before_lines=1,subtitle_break=false,after_label_space=1\jlreq@zw,second_heading_text_indent={-1\jlreq@zw,1\jlreq@zw},subtitle_font={\jlreq@keepbaselineskip{\scriptsize}}}
+  \NewRuninHeading{paragraph}{4}{font={\jlreq@keepbaselineskip{\normalsize\sffamily\gtfamily\bfseries}},indent=1\jlreq@zw}
+  \NewRuninHeading{subparagraph}{5}{font={\jlreq@keepbaselineskip{\normalsize\sffamily\gtfamily\bfseries}},indent=2\jlreq@zw}
+\fi
+
 \makeatother
