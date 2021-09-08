@@ -50,8 +50,8 @@
     \def\reviewtitlepagecont{%
       \if@tate% 縦書き大扉
         \begin{titlepage}
+        \niceframe{%
         \thispagestyle{empty}
-        %\niceframe{%
           \begin{minipage}<y>{\textheight}
             \begin{center}
               \mbox{}%
@@ -80,7 +80,7 @@
               \vskip4\zw\mbox{}
             \end{center}
           \end{minipage}
-        %}
+        }
         \end{titlepage}
         \clearpage
       \else% 横書き大扉
