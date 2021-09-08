@@ -50,8 +50,8 @@
     \def\reviewtitlepagecont{%
       \if@tate% 縦書き大扉
         \begin{titlepage}
+        \niceframe{%
         \thispagestyle{empty}
-        %\niceframe{%
           \begin{minipage}<y>{\textheight}
             \begin{center}
               \mbox{}%
@@ -80,7 +80,7 @@
               \vskip4\zw\mbox{}
             \end{center}
           \end{minipage}
-        %}
+        }
         \end{titlepage}
         \clearpage
       \else% 横書き大扉
@@ -176,6 +176,7 @@
 \let\jlreq@theindex@savedpagestyle\@undefined
 \ifjlreq@resttate\tate\fi
 \jlreq@oldfontcommand@disable
+
 
 \RenewTobiraHeading{part}{-1}{label_format={第\thepart 部\hspace*{1\jlreq@zw}},format={\null\vspace*{2\jlreq@gol} {\huge#1\linebreak\vspace*{2\jlreq@gol}\Large#2}\vspace*{2\jlreq@gol}}}
 
