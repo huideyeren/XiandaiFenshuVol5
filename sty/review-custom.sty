@@ -51,24 +51,26 @@
       \if@tate% 縦書き大扉
         \begin{titlepage}
         	\centering
-          \niceframe{%
+          
             \thispagestyle{empty}
             \begin{minipage}<y>{\textheight}
               \begin{center}
-                \mbox{}%
-                \vskip5\zw
-                %\reviewtitlefont%
-                {\Huge\review@booktitlename\par}%
-                \ifdefined\review@subtitlename
-                  \vskip 1em%
-                  {\Large\review@subtitlename\par}%
-                \fi
-                \vskip 15em%
-                {\huge
-                  \lineskip .75em
-                  \begin{tabular}[t]{p{\textwidth}}%
-                    \centering\review@titlepageauthors
-                  \end{tabular}\par}%
+                \niceframe{%
+                  \mbox{}%
+                  \vskip5\zw
+                  %\reviewtitlefont%
+                  {\Huge\review@booktitlename\par}%
+                  \ifdefined\review@subtitlename
+                    \vskip 1em%
+                    {\Large\review@subtitlename\par}%
+                  \fi
+                  \vskip 15em%
+                  {\huge
+                    \lineskip .75em
+                    \begin{tabular}[t]{p{\textwidth}}%
+                      \centering\review@titlepageauthors
+                    \end{tabular}\par}%
+                }
               \end{center}
             \end{minipage}
             \hfill
@@ -81,7 +83,6 @@
                 \vskip4\zw\mbox{}
               \end{center}
             \end{minipage}
-          }
         \end{titlepage}
         \clearpage
       \else% 横書き大扉
