@@ -6,8 +6,8 @@ ja:
   column: "コラム「%s」"
   columnname: "コラム"
   column_head: "■コラム"
-  part: 第%pR部
-  part_short: "%pR"
+  part: 第%pJ部
+  part_short: "%pJ"
   chapter: 第%pJ章
   chapter_short: "%pJ"
   chapter_postfix: "　"
@@ -15,11 +15,11 @@ ja:
   chapter_quote_without_number: "「%s」"
   hd_quote: "「%s %s」"
   hd_quote_without_number: "「%s」"
-  appendix: 付録%pAW
+  appendix: 付録%pJ
   numberless_image: "図:"
   memo_head: ■メモ
-  format_number: "%s.%pJ"
-  format_number_header: "%s.%pJ:"
+  format_number: "%s．%pJ"
+  format_number_header: "%s．%pJ:"
   format_number_without_chapter: "%pJ"
   format_number_header_without_chapter: "%pJ:"
   image_quote: "「%s」"
