@@ -1,6 +1,7 @@
 {
     "rules": {
         "preset-smarthr":{
+            "no-mixed-zenkaku-and-hankaku-alphabet": false,
             "sentence-length": false
         },
         "prh": {
