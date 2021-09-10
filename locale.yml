@@ -18,7 +18,7 @@ ja:
   appendix: 付録%pJ
   numberless_image: "図:"
   memo_head: ■メモ
-  format_number: "%s．%pJ"
+  format_number: "%s．%pJで"
   format_number_header: "%s．%pJ:"
   format_number_without_chapter: "%pJ"
   format_number_header_without_chapter: "%pJ:"
