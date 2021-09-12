@@ -1,7 +1,14 @@
 = 参考文献
 
 //embed[latex]{
-\begin{thebibliography}{ああああああああああああああああ}
+\begin{thebibliography}{99}
+//}
+
+//bibpaper[lenten_triodion][三歌斎経]{
+  聖ニコライ・中井木菟麻呂訳『三歌斎経』
+//}
+//bibpaper[bibleOrthodox][正教会訳聖書]{
+  聖ニコライ・中井木菟麻呂訳『正教会訳聖書』
 //}
 
 //bibpaper[clone_catholic][日本カトリック教会　１９９７]{
@@ -37,6 +44,31 @@
 //bibpaper[dekisokonai][福岡　２００８]{
   福岡伸一『できそこないの男たち』光文社、２００８年
 //}
+//bibpaper[Auyeung_key][歐陽宇亮氏の体験にかかる既述]{
+  歐陽宇亮「香港ガリ勉眼鏡っ娘ゲーマー第@<tcy>{11}回！“葉鍵”女子が「俺」になるとき」２０１７年４月@<tcy>{10}日発表@<br>{}
+  @<href>{http://jp.ign.com/hkgirlgamer/12612/feature/11}
+//}
+//bibpaper[dempaotoko][電波男]{
+  本田透『電波男』三才ブックス、２００５年
+//}
+//bibpaper[himote][非モテの品格]{
+  杉田俊介『非モテの品格』集英社、２０１６年
+//}
+//bibpaper[morugessoyo][朝日新聞社の金知鉉氏へのインタビュー]{
+  朝日新聞デジタル「平昌五輪の謎彫刻、狙いは何か　モルゲッソヨの作者語る」２０１８年２月@<tcy>{26}日@<tcy>{19}時@<tcy>{30}分発表@<br>{}
+  @<href>{https://www.asahi.com/articles/ASL2V5HSKL2VUEHF00D.html} @<br>{}
+  （記者：藤田太郎氏）
+//}
+//bibpaper[hokekyo][法華経]{
+  『法華経』
+//}
+//bibpaper[lords_prayer][天主経]{
+  祈祷文「天主経」（聖ニコライ・中井木菟麻呂訳の原文による）
+//}
+//bibpaper[lost_generation][ロスジェネ心理学]{
+  熊代亨『ロスジェネ心理学 生きづらいこの時代をひも解く』花伝社、２０１２年
+//}
+
 
 //embed[latex]{
 \end{thebibliography}
