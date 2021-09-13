@@ -97,7 +97,7 @@
 
 #@# textlint-disable
 
-（ @<bib>{clone_catholic} ）
+@<bib>{clone_catholic}
 
 #@# textlint-enable
 //}
@@ -116,11 +116,7 @@
 それはまた、人間の優劣・差別、支配・被支配につながるとともに、
 奴隷人間の生産という修羅道への転落を予告するものである。
 
-#@# textlint-disable
-
-（ @<bib>{clone_jodoshu} ）
-
-#@# textlint-enable
+@<bib>{clone_jodoshu}
 //}
 
 これは、優生学にも関連して人間の尊厳を侵害するものであると述べられています。
@@ -133,7 +129,7 @@
 
 #@# textlint-disable
 
-（ @<bib>{clone_tendaishu} ）
+@<bib>{clone_tendaishu}
 
 #@# textlint-enable
 //}
@@ -262,7 +258,7 @@
 
 #@# textlint-disable
 
-（ @<bib>{zahra} ）
+@<bib>{zahra}
 
 #@# textlint-enable
 //}
@@ -341,7 +337,7 @@
 その身体が傷つかないよう（赤ん坊の入った練り物を）自分の裾に入れて丁寧に運んだ。
 そして赤ん坊はヂョチと名付けられたが、その理由は、こうして彼が思いがけずこの世に生まれたからである。
 
-（ @<bib>{shushi} ）
+@<bib>{shushi}
 
 #@# textlint-enable
 //}
@@ -359,7 +355,7 @@
 
 「ジョチに（まず）述べよと仰せられるのは、ジョチに（この国民を）委ねんと思し召されてのことでしょうか。このメルキト（族）の血統のものに、どうして（わが国民を）統べさせられましょう」
 
-（ @<bib>{gencho_hishi} ）
+@<bib>{gencho_hishi}
 
 #@# textlint-enable
 //}
@@ -393,7 +389,7 @@
 万世一系の皇統維持でもない。
 母の遺伝子を別の娘のもとに運び、混ぜ合わせることだったのである。
 
-（ @<bib>{dekisokonai} ）
+@<bib>{dekisokonai}
 
 #@# textlint-enable
 //}
@@ -450,11 +446,7 @@
 オスに「この子は自分の子だ」という確信を深めさせるのだ。
 結果として子殺しを防げるだけでなく、オスから育児協力を引き出すことも可能になる。
 
-#@# textlint-disable
-
-（ @<bib>{jidou_gyakutai} ）
-
-#@# textlint-enable
+@<bib>{jidou_gyakutai}
 //}
 
 そうなると、ヒトの一夫一妻制は繁殖戦略としても有効であり、
