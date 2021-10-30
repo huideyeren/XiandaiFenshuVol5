@@ -2,16 +2,9 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - 十周年の今だから考える「輪るピングドラム」論:
-    - koritsu.re
-    - anohi.re
-  - 競馬ファン歴二十五年が語る「ウマ娘」と競馬:
-    - bloomers.re
-    - sunday-silence.re
-  - あらためて９０年代を語る:
-    - nineties.re
-    - noughties-otaku.re
-    - ageinst-cult.re
+  - koritsu.re
+  - anohi.re
+  - bloomers.re
 
 APPENDIX:
 
