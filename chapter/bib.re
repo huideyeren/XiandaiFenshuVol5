@@ -35,6 +35,16 @@
   東京・ぶんか社　１９９６年
 //}
 
+//bibpaper[kamitsuita][運命に噛みついた馬]{
+  レイ・ボーリック著、大関夏子訳『運命に噛みついた馬　サンデーサイレンス物語』
+  東京・産経新聞ニュースサービス　２００２年
+//}
+
+//bibpaper[kiyotaku][清田区の略年譜]{
+  札幌市清田区のホームページ「きよたの歴史 > 略年譜」
+  https://www.city.sapporo.jp/kiyota/outline/history/index2.html
+//}
+
 //embed[latex]{
 \end{thebibliography}
 //}
