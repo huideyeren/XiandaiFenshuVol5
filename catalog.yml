@@ -2,10 +2,10 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - bloomers.re
+  # - bloomers.re
   - sunday.re
-  - koritsu.re
-  - anohi.re
+  # - koritsu.re
+  # - anohi.re
 
 APPENDIX:
 
