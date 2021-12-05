@@ -20,6 +20,31 @@
   @<href>{http://www.jairs.jp/contents/w_news/2016/2/3.html}
 //}
 
+//bibpaper[subeteno][すべての馬に乗れ]{
+  よしだみほ『競馬連戦連笑７　すべての馬に乗れ』@<br>{}
+  東京・ワニブックス　１９９６年
+//}
+
+//bibpaper[umahodo][馬ほどステキな役者はいない]{
+  よしだみほ『競馬連戦連笑５　馬ほどステキな役者はいない』@<br>{}
+  東京・ワニブックス　１９９５年
+//}
+
+//bibpaper[gendai-meibakan][私設現代名馬館]{
+  よしだみほ『私設現代名馬館』@<br>{}
+  東京・ぶんか社　１９９６年
+//}
+
+//bibpaper[kamitsuita][運命に噛みついた馬]{
+  レイ・ボーリック著、大関夏子訳『運命に噛みついた馬　サンデーサイレンス物語』
+  東京・産経新聞ニュースサービス　２００２年
+//}
+
+//bibpaper[kiyotaku][清田区の略年譜]{
+  札幌市清田区のホームページ「きよたの歴史 > 略年譜」
+  https://www.city.sapporo.jp/kiyota/outline/history/index2.html
+//}
+
 //embed[latex]{
 \end{thebibliography}
 //}
