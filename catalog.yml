@@ -2,8 +2,9 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - bloomers.re
+  - history.re
   - sunday.re
+  - hamatta.re
 
 APPENDIX:
 
